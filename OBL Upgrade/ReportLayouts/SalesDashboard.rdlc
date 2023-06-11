@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CformPendingAmt">
+          <DataField>CformPendingAmt</DataField>
+        </Field>
+        <Field Name="CformPendingAmtFormat">
+          <DataField>CformPendingAmtFormat</DataField>
+        </Field>
+        <Field Name="CustomerType_Customer">
+          <DataField>CustomerType_Customer</DataField>
+        </Field>
+        <Field Name="BalanceLCY_Customer">
+          <DataField>BalanceLCY_Customer</DataField>
+        </Field>
+        <Field Name="BalanceLCY_CustomerFormat">
+          <DataField>BalanceLCY_CustomerFormat</DataField>
+        </Field>
+        <Field Name="Balance_Customer">
+          <DataField>Balance_Customer</DataField>
+        </Field>
+        <Field Name="Balance_CustomerFormat">
+          <DataField>Balance_CustomerFormat</DataField>
+        </Field>
+        <Field Name="SalesLCY_Customer">
+          <DataField>SalesLCY_Customer</DataField>
+        </Field>
+        <Field Name="SalesLCY_CustomerFormat">
+          <DataField>SalesLCY_CustomerFormat</DataField>
+        </Field>
+        <Field Name="CreditLimitLCY_Customer">
+          <DataField>CreditLimitLCY_Customer</DataField>
+        </Field>
+        <Field Name="CreditLimitLCY_CustomerFormat">
+          <DataField>CreditLimitLCY_CustomerFormat</DataField>
+        </Field>
+        <Field Name="City_Customer">
+          <DataField>City_Customer</DataField>
+        </Field>
+        <Field Name="No_Customer">
+          <DataField>No_Customer</DataField>
+        </Field>
+        <Field Name="Name_Customer">
+          <DataField>Name_Customer</DataField>
+        </Field>
+        <Field Name="Value">
+          <DataField>Value</DataField>
+        </Field>
+        <Field Name="ValueFormat">
+          <DataField>ValueFormat</DataField>
+        </Field>
+        <Field Name="OustandingDays">
+          <DataField>OustandingDays</DataField>
+        </Field>
+        <Field Name="SalesValue">
+          <DataField>SalesValue</DataField>
+        </Field>
+        <Field Name="SalesValueFormat">
+          <DataField>SalesValueFormat</DataField>
+        </Field>
+        <Field Name="OverDueDy">
+          <DataField>OverDueDy</DataField>
+        </Field>
+        <Field Name="OverDueAmt">
+          <DataField>OverDueAmt</DataField>
+        </Field>
+        <Field Name="OverDueAmtFormat">
+          <DataField>OverDueAmtFormat</DataField>
+        </Field>
+        <Field Name="MonthValue">
+          <DataField>MonthValue</DataField>
+        </Field>
+        <Field Name="MonthValueFormat">
+          <DataField>MonthValueFormat</DataField>
+        </Field>
+        <Field Name="TODAY">
+          <DataField>TODAY</DataField>
+        </Field>
+        <Field Name="Del_Gur_Far_Sale">
+          <DataField>Del_Gur_Far_Sale</DataField>
+        </Field>
+        <Field Name="Del_Gur_Far_SaleFormat">
+          <DataField>Del_Gur_Far_SaleFormat</DataField>
+        </Field>
+        <Field Name="Chennai_Sales">
+          <DataField>Chennai_Sales</DataField>
+        </Field>
+        <Field Name="Chennai_SalesFormat">
+          <DataField>Chennai_SalesFormat</DataField>
+        </Field>
+        <Field Name="TotalMTD">
+          <DataField>TotalMTD</DataField>
+        </Field>
+        <Field Name="TotalMTDFormat">
+          <DataField>TotalMTDFormat</DataField>
+        </Field>
+        <Field Name="TotalYTD">
+          <DataField>TotalYTD</DataField>
+        </Field>
+        <Field Name="TotalYTDFormat">
+          <DataField>TotalYTDFormat</DataField>
+        </Field>
+        <Field Name="MonthNCRSales">
+          <DataField>MonthNCRSales</DataField>
+        </Field>
+        <Field Name="MonthNCRSalesFormat">
+          <DataField>MonthNCRSalesFormat</DataField>
+        </Field>
+        <Field Name="MonthChennai_Sales">
+          <DataField>MonthChennai_Sales</DataField>
+        </Field>
+        <Field Name="MonthChennai_SalesFormat">
+          <DataField>MonthChennai_SalesFormat</DataField>
+        </Field>
+        <Field Name="TotalCForm">
+          <DataField>TotalCForm</DataField>
+        </Field>
+        <Field Name="TotalCFormFormat">
+          <DataField>TotalCFormFormat</DataField>
+        </Field>
+        <Field Name="TotalOutstanding">
+          <DataField>TotalOutstanding</DataField>
+        </Field>
+        <Field Name="TotalOutstandingFormat">
+          <DataField>TotalOutstandingFormat</DataField>
+        </Field>
+        <Field Name="TotalOverdue">
+          <DataField>TotalOverdue</DataField>
+        </Field>
+        <Field Name="TotalOverdueFormat">
+          <DataField>TotalOverdueFormat</DataField>
+        </Field>
+        <Field Name="OutstandingNCR">
+          <DataField>OutstandingNCR</DataField>
+        </Field>
+        <Field Name="OutstandingNCRFormat">
+          <DataField>OutstandingNCRFormat</DataField>
+        </Field>
+        <Field Name="OutstandingChennai">
+          <DataField>OutstandingChennai</DataField>
+        </Field>
+        <Field Name="OutstandingChennaiFormat">
+          <DataField>OutstandingChennaiFormat</DataField>
+        </Field>
+        <Field Name="OverDueNCR">
+          <DataField>OverDueNCR</DataField>
+        </Field>
+        <Field Name="OverDueNCRFormat">
+          <DataField>OverDueNCRFormat</DataField>
+        </Field>
+        <Field Name="OverdueChennai">
+          <DataField>OverdueChennai</DataField>
+        </Field>
+        <Field Name="OverdueChennaiFormat">
+          <DataField>OverdueChennaiFormat</DataField>
+        </Field>
+        <Field Name="CformNCR">
+          <DataField>CformNCR</DataField>
+        </Field>
+        <Field Name="CformNCRFormat">
+          <DataField>CformNCRFormat</DataField>
+        </Field>
+        <Field Name="CformChennai">
+          <DataField>CformChennai</DataField>
+        </Field>
+        <Field Name="CformChennaiFormat">
+          <DataField>CformChennaiFormat</DataField>
+        </Field>
+        <Field Name="PanSalesValue">
+          <DataField>PanSalesValue</DataField>
+        </Field>
+        <Field Name="PanSalesValueFormat">
+          <DataField>PanSalesValueFormat</DataField>
+        </Field>
+        <Field Name="PanMonthValue">
+          <DataField>PanMonthValue</DataField>
+        </Field>
+        <Field Name="PanMonthValueFormat">
+          <DataField>PanMonthValueFormat</DataField>
+        </Field>
+        <Field Name="PanOutstanding">
+          <DataField>PanOutstanding</DataField>
+        </Field>
+        <Field Name="PanOutstandingFormat">
+          <DataField>PanOutstandingFormat</DataField>
+        </Field>
+        <Field Name="PanOverDue">
+          <DataField>PanOverDue</DataField>
+        </Field>
+        <Field Name="PanOverDueFormat">
+          <DataField>PanOverDueFormat</DataField>
+        </Field>
+        <Field Name="PANCForm">
+          <DataField>PANCForm</DataField>
+        </Field>
+        <Field Name="PANCFormFormat">
+          <DataField>PANCFormFormat</DataField>
+        </Field>
+        <Field Name="MonthSaleReturn">
+          <DataField>MonthSaleReturn</DataField>
+        </Field>
+        <Field Name="MonthSaleReturnFormat">
+          <DataField>MonthSaleReturnFormat</DataField>
+        </Field>
+        <Field Name="TotalSaleReturn">
+          <DataField>TotalSaleReturn</DataField>
+        </Field>
+        <Field Name="TotalSaleReturnFormat">
+          <DataField>TotalSaleReturnFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

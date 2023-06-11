@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="PostingDate">
+          <DataField>PostingDate</DataField>
+        </Field>
+        <Field Name="LocationCode">
+          <DataField>LocationCode</DataField>
+        </Field>
+        <Field Name="ItemNo">
+          <DataField>ItemNo</DataField>
+        </Field>
+        <Field Name="Blank">
+          <DataField>Blank</DataField>
+        </Field>
+        <Field Name="InBondEntry">
+          <DataField>InBondEntry</DataField>
+        </Field>
+        <Field Name="PostedPurchInvoice">
+          <DataField>PostedPurchInvoice</DataField>
+        </Field>
+        <Field Name="VendName">
+          <DataField>VendName</DataField>
+        </Field>
+        <Field Name="VendInv">
+          <DataField>VendInv</DataField>
+        </Field>
+        <Field Name="OutBondEntry">
+          <DataField>OutBondEntry</DataField>
+        </Field>
+        <Field Name="CustName">
+          <DataField>CustName</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="QuantityFormat">
+          <DataField>QuantityFormat</DataField>
+        </Field>
+        <Field Name="itemdesc">
+          <DataField>itemdesc</DataField>
+        </Field>
+        <Field Name="AmountToCustomer">
+          <DataField>AmountToCustomer</DataField>
+        </Field>
+        <Field Name="AmountToCustomerFormat">
+          <DataField>AmountToCustomerFormat</DataField>
+        </Field>
+        <Field Name="RATE">
+          <DataField>RATE</DataField>
+        </Field>
+        <Field Name="RATEFormat">
+          <DataField>RATEFormat</DataField>
+        </Field>
+        <Field Name="TaxAmount">
+          <DataField>TaxAmount</DataField>
+        </Field>
+        <Field Name="TaxAmountFormat">
+          <DataField>TaxAmountFormat</DataField>
+        </Field>
+        <Field Name="Exciseamt">
+          <DataField>Exciseamt</DataField>
+        </Field>
+        <Field Name="ExciseamtFormat">
+          <DataField>ExciseamtFormat</DataField>
+        </Field>
+        <Field Name="Amttovend">
+          <DataField>Amttovend</DataField>
+        </Field>
+        <Field Name="AmttovendFormat">
+          <DataField>AmttovendFormat</DataField>
+        </Field>
+        <Field Name="purqty">
+          <DataField>purqty</DataField>
+        </Field>
+        <Field Name="purqtyFormat">
+          <DataField>purqtyFormat</DataField>
+        </Field>
+        <Field Name="qpre">
+          <DataField>qpre</DataField>
+        </Field>
+        <Field Name="qpreFormat">
+          <DataField>qpreFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

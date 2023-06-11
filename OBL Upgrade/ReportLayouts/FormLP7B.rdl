@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyName2">
+          <DataField>CompanyName2</DataField>
+        </Field>
+        <Field Name="FORMAT">
+          <DataField>FORMAT</DataField>
+        </Field>
+        <Field Name="UOM">
+          <DataField>UOM</DataField>
+        </Field>
+        <Field Name="DateTo1">
+          <DataField>DateTo1</DataField>
+        </Field>
+        <Field Name="DateFrom1">
+          <DataField>DateFrom1</DataField>
+        </Field>
+        <Field Name="Filters1">
+          <DataField>Filters1</DataField>
+        </Field>
+        <Field Name="PeriodStart1">
+          <DataField>PeriodStart1</DataField>
+        </Field>
+        <Field Name="Total">
+          <DataField>Total</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="QuantityFormat">
+          <DataField>QuantityFormat</DataField>
+        </Field>
+        <Field Name="SalesLine">
+          <DataField>SalesLine</DataField>
+        </Field>
+        <Field Name="SalesLineFormat">
+          <DataField>SalesLineFormat</DataField>
+        </Field>
+        <Field Name="Export">
+          <DataField>Export</DataField>
+        </Field>
+        <Field Name="PostingDate">
+          <DataField>PostingDate</DataField>
+        </Field>
+        <Field Name="SelltoCustomerName">
+          <DataField>SelltoCustomerName</DataField>
+        </Field>
+        <Field Name="Quantity1">
+          <DataField>Quantity1</DataField>
+        </Field>
+        <Field Name="Quantity1Format">
+          <DataField>Quantity1Format</DataField>
+        </Field>
+        <Field Name="SqrMtr1">
+          <DataField>SqrMtr1</DataField>
+        </Field>
+        <Field Name="SqrMtr1Format">
+          <DataField>SqrMtr1Format</DataField>
+        </Field>
+        <Field Name="QuantityShipped">
+          <DataField>QuantityShipped</DataField>
+        </Field>
+        <Field Name="QuantityShippedFormat">
+          <DataField>QuantityShippedFormat</DataField>
+        </Field>
+        <Field Name="PenQtyinSqMt1">
+          <DataField>PenQtyinSqMt1</DataField>
+        </Field>
+        <Field Name="PenQtyinSqMt1Format">
+          <DataField>PenQtyinSqMt1Format</DataField>
+        </Field>
+        <Field Name="InvDisc1">
+          <DataField>InvDisc1</DataField>
+        </Field>
+        <Field Name="InvDisc1Format">
+          <DataField>InvDisc1Format</DataField>
+        </Field>
+        <Field Name="TotalValue">
+          <DataField>TotalValue</DataField>
+        </Field>
+        <Field Name="TotalValueFormat">
+          <DataField>TotalValueFormat</DataField>
+        </Field>
+        <Field Name="NetValue1">
+          <DataField>NetValue1</DataField>
+        </Field>
+        <Field Name="NetValue1Format">
+          <DataField>NetValue1Format</DataField>
+        </Field>
+        <Field Name="PeriodStart">
+          <DataField>PeriodStart</DataField>
+        </Field>
+        <Field Name="DataItem1000000029">
+          <DataField>DataItem1000000029</DataField>
+        </Field>
+        <Field Name="DataItem1000000025">
+          <DataField>DataItem1000000025</DataField>
+        </Field>
+        <Field Name="ItemAmount3">
+          <DataField>ItemAmount3</DataField>
+        </Field>
+        <Field Name="DataItem1000000027">
+          <DataField>DataItem1000000027</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

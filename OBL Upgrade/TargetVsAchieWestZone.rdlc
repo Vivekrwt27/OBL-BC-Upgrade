@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="QuantitativeReport">
+          <DataField>QuantitativeReport</DataField>
+        </Field>
+        <Field Name="ASonDate">
+          <DataField>ASonDate</DataField>
+        </Field>
+        <Field Name="ASonDate1">
+          <DataField>ASonDate1</DataField>
+        </Field>
+        <Field Name="ASonDate2">
+          <DataField>ASonDate2</DataField>
+        </Field>
+        <Field Name="ASonDate3">
+          <DataField>ASonDate3</DataField>
+        </Field>
+        <Field Name="ASonDate4">
+          <DataField>ASonDate4</DataField>
+        </Field>
+        <Field Name="Zone">
+          <DataField>Zone</DataField>
+        </Field>
+        <Field Name="AreaCode">
+          <DataField>AreaCode</DataField>
+        </Field>
+        <Field Name="AreaDescription">
+          <DataField>AreaDescription</DataField>
+        </Field>
+        <Field Name="Target">
+          <DataField>Target</DataField>
+        </Field>
+        <Field Name="TargetFormat">
+          <DataField>TargetFormat</DataField>
+        </Field>
+        <Field Name="MTD">
+          <DataField>MTD</DataField>
+        </Field>
+        <Field Name="MTDFormat">
+          <DataField>MTDFormat</DataField>
+        </Field>
+        <Field Name="MTDQty">
+          <DataField>MTDQty</DataField>
+        </Field>
+        <Field Name="MTDQtyFormat">
+          <DataField>MTDQtyFormat</DataField>
+        </Field>
+        <Field Name="OpenOrdersQty">
+          <DataField>OpenOrdersQty</DataField>
+        </Field>
+        <Field Name="OpenOrdersQtyFormat">
+          <DataField>OpenOrdersQtyFormat</DataField>
+        </Field>
+        <Field Name="ReleaseOrdersQty">
+          <DataField>ReleaseOrdersQty</DataField>
+        </Field>
+        <Field Name="ReleaseOrdersQtyFormat">
+          <DataField>ReleaseOrdersQtyFormat</DataField>
+        </Field>
+        <Field Name="OpenOrdersAmt">
+          <DataField>OpenOrdersAmt</DataField>
+        </Field>
+        <Field Name="OpenOrdersAmtFormat">
+          <DataField>OpenOrdersAmtFormat</DataField>
+        </Field>
+        <Field Name="ReleaseOrdersAmty">
+          <DataField>ReleaseOrdersAmty</DataField>
+        </Field>
+        <Field Name="ReleaseOrdersAmtyFormat">
+          <DataField>ReleaseOrdersAmtyFormat</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt1">
+          <DataField>OrderBookedAmt1</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt1Format">
+          <DataField>OrderBookedAmt1Format</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt2">
+          <DataField>OrderBookedAmt2</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt2Format">
+          <DataField>OrderBookedAmt2Format</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt3">
+          <DataField>OrderBookedAmt3</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt3Format">
+          <DataField>OrderBookedAmt3Format</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt4">
+          <DataField>OrderBookedAmt4</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt4Format">
+          <DataField>OrderBookedAmt4Format</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt5">
+          <DataField>OrderBookedAmt5</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt5Format">
+          <DataField>OrderBookedAmt5Format</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt6">
+          <DataField>OrderBookedAmt6</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt6Format">
+          <DataField>OrderBookedAmt6Format</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt7">
+          <DataField>OrderBookedAmt7</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt7Format">
+          <DataField>OrderBookedAmt7Format</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt8">
+          <DataField>OrderBookedAmt8</DataField>
+        </Field>
+        <Field Name="OrderBookedAmt8Format">
+          <DataField>OrderBookedAmt8Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt1">
+          <DataField>OrderReleasedAmt1</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt1Format">
+          <DataField>OrderReleasedAmt1Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt2">
+          <DataField>OrderReleasedAmt2</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt2Format">
+          <DataField>OrderReleasedAmt2Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt3">
+          <DataField>OrderReleasedAmt3</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt3Format">
+          <DataField>OrderReleasedAmt3Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt4">
+          <DataField>OrderReleasedAmt4</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt4Format">
+          <DataField>OrderReleasedAmt4Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt5">
+          <DataField>OrderReleasedAmt5</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt5Format">
+          <DataField>OrderReleasedAmt5Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt6">
+          <DataField>OrderReleasedAmt6</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt6Format">
+          <DataField>OrderReleasedAmt6Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt7">
+          <DataField>OrderReleasedAmt7</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt7Format">
+          <DataField>OrderReleasedAmt7Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt8">
+          <DataField>OrderReleasedAmt8</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt8Format">
+          <DataField>OrderReleasedAmt8Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt9">
+          <DataField>OrderReleasedAmt9</DataField>
+        </Field>
+        <Field Name="OrderReleasedAmt9Format">
+          <DataField>OrderReleasedAmt9Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt1">
+          <DataField>InvBookedAmt1</DataField>
+        </Field>
+        <Field Name="InvBookedAmt1Format">
+          <DataField>InvBookedAmt1Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt2">
+          <DataField>InvBookedAmt2</DataField>
+        </Field>
+        <Field Name="InvBookedAmt2Format">
+          <DataField>InvBookedAmt2Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt3">
+          <DataField>InvBookedAmt3</DataField>
+        </Field>
+        <Field Name="InvBookedAmt3Format">
+          <DataField>InvBookedAmt3Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt4">
+          <DataField>InvBookedAmt4</DataField>
+        </Field>
+        <Field Name="InvBookedAmt4Format">
+          <DataField>InvBookedAmt4Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt5">
+          <DataField>InvBookedAmt5</DataField>
+        </Field>
+        <Field Name="InvBookedAmt5Format">
+          <DataField>InvBookedAmt5Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt6">
+          <DataField>InvBookedAmt6</DataField>
+        </Field>
+        <Field Name="InvBookedAmt6Format">
+          <DataField>InvBookedAmt6Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt7">
+          <DataField>InvBookedAmt7</DataField>
+        </Field>
+        <Field Name="InvBookedAmt7Format">
+          <DataField>InvBookedAmt7Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt8">
+          <DataField>InvBookedAmt8</DataField>
+        </Field>
+        <Field Name="InvBookedAmt8Format">
+          <DataField>InvBookedAmt8Format</DataField>
+        </Field>
+        <Field Name="InvBookedAmt9">
+          <DataField>InvBookedAmt9</DataField>
+        </Field>
+        <Field Name="InvBookedAmt9Format">
+          <DataField>InvBookedAmt9Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty1">
+          <DataField>OrderBookedQty1</DataField>
+        </Field>
+        <Field Name="OrderBookedQty1Format">
+          <DataField>OrderBookedQty1Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty2">
+          <DataField>OrderBookedQty2</DataField>
+        </Field>
+        <Field Name="OrderBookedQty2Format">
+          <DataField>OrderBookedQty2Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty3">
+          <DataField>OrderBookedQty3</DataField>
+        </Field>
+        <Field Name="OrderBookedQty3Format">
+          <DataField>OrderBookedQty3Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty4">
+          <DataField>OrderBookedQty4</DataField>
+        </Field>
+        <Field Name="OrderBookedQty4Format">
+          <DataField>OrderBookedQty4Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty5">
+          <DataField>OrderBookedQty5</DataField>
+        </Field>
+        <Field Name="OrderBookedQty5Format">
+          <DataField>OrderBookedQty5Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty6">
+          <DataField>OrderBookedQty6</DataField>
+        </Field>
+        <Field Name="OrderBookedQty6Format">
+          <DataField>OrderBookedQty6Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty7">
+          <DataField>OrderBookedQty7</DataField>
+        </Field>
+        <Field Name="OrderBookedQty7Format">
+          <DataField>OrderBookedQty7Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty8">
+          <DataField>OrderBookedQty8</DataField>
+        </Field>
+        <Field Name="OrderBookedQty8Format">
+          <DataField>OrderBookedQty8Format</DataField>
+        </Field>
+        <Field Name="OrderBookedQty9">
+          <DataField>OrderBookedQty9</DataField>
+        </Field>
+        <Field Name="OrderBookedQty9Format">
+          <DataField>OrderBookedQty9Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty1">
+          <DataField>OrderReleasedQty1</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty1Format">
+          <DataField>OrderReleasedQty1Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty2">
+          <DataField>OrderReleasedQty2</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty2Format">
+          <DataField>OrderReleasedQty2Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty3">
+          <DataField>OrderReleasedQty3</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty3Format">
+          <DataField>OrderReleasedQty3Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty4">
+          <DataField>OrderReleasedQty4</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty4Format">
+          <DataField>OrderReleasedQty4Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty5">
+          <DataField>OrderReleasedQty5</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty5Format">
+          <DataField>OrderReleasedQty5Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty6">
+          <DataField>OrderReleasedQty6</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty6Format">
+          <DataField>OrderReleasedQty6Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty7">
+          <DataField>OrderReleasedQty7</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty7Format">
+          <DataField>OrderReleasedQty7Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty8">
+          <DataField>OrderReleasedQty8</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty8Format">
+          <DataField>OrderReleasedQty8Format</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty9">
+          <DataField>OrderReleasedQty9</DataField>
+        </Field>
+        <Field Name="OrderReleasedQty9Format">
+          <DataField>OrderReleasedQty9Format</DataField>
+        </Field>
+        <Field Name="Outstanding">
+          <DataField>Outstanding</DataField>
+        </Field>
+        <Field Name="OutstandingFormat">
+          <DataField>OutstandingFormat</DataField>
+        </Field>
+        <Field Name="OverDue">
+          <DataField>OverDue</DataField>
+        </Field>
+        <Field Name="OverDueFormat">
+          <DataField>OverDueFormat</DataField>
+        </Field>
+        <Field Name="Collection">
+          <DataField>Collection</DataField>
+        </Field>
+        <Field Name="CollectionFormat">
+          <DataField>CollectionFormat</DataField>
+        </Field>
+        <Field Name="FTD">
+          <DataField>FTD</DataField>
+        </Field>
+        <Field Name="FTDFormat">
+          <DataField>FTDFormat</DataField>
+        </Field>
+        <Field Name="FTDQty">
+          <DataField>FTDQty</DataField>
+        </Field>
+        <Field Name="FTDQtyFormat">
+          <DataField>FTDQtyFormat</DataField>
+        </Field>
+        <Field Name="DSO">
+          <DataField>DSO</DataField>
+        </Field>
+        <Field Name="DSOFormat">
+          <DataField>DSOFormat</DataField>
+        </Field>
+        <Field Name="Sales">
+          <DataField>Sales</DataField>
+        </Field>
+        <Field Name="SalesFormat">
+          <DataField>SalesFormat</DataField>
+        </Field>
+        <Field Name="OutStandingAmt">
+          <DataField>OutStandingAmt</DataField>
+        </Field>
+        <Field Name="OutStandingAmtFormat">
+          <DataField>OutStandingAmtFormat</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd1">
+          <DataField>decOpnOrderOtstnd1</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd1Format">
+          <DataField>decOpnOrderOtstnd1Format</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd2">
+          <DataField>decOpnOrderOtstnd2</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd2Format">
+          <DataField>decOpnOrderOtstnd2Format</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd3">
+          <DataField>decOpnOrderOtstnd3</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd3Format">
+          <DataField>decOpnOrderOtstnd3Format</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd4">
+          <DataField>decOpnOrderOtstnd4</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd4Format">
+          <DataField>decOpnOrderOtstnd4Format</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd5">
+          <DataField>decOpnOrderOtstnd5</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd5Format">
+          <DataField>decOpnOrderOtstnd5Format</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd6">
+          <DataField>decOpnOrderOtstnd6</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd6Format">
+          <DataField>decOpnOrderOtstnd6Format</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd7">
+          <DataField>decOpnOrderOtstnd7</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd7Format">
+          <DataField>decOpnOrderOtstnd7Format</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd8">
+          <DataField>decOpnOrderOtstnd8</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd8Format">
+          <DataField>decOpnOrderOtstnd8Format</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd9">
+          <DataField>decOpnOrderOtstnd9</DataField>
+        </Field>
+        <Field Name="decOpnOrderOtstnd9Format">
+          <DataField>decOpnOrderOtstnd9Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp1">
+          <DataField>decMTDDesp1</DataField>
+        </Field>
+        <Field Name="decMTDDesp1Format">
+          <DataField>decMTDDesp1Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp2">
+          <DataField>decMTDDesp2</DataField>
+        </Field>
+        <Field Name="decMTDDesp2Format">
+          <DataField>decMTDDesp2Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp3">
+          <DataField>decMTDDesp3</DataField>
+        </Field>
+        <Field Name="decMTDDesp3Format">
+          <DataField>decMTDDesp3Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp4">
+          <DataField>decMTDDesp4</DataField>
+        </Field>
+        <Field Name="decMTDDesp4Format">
+          <DataField>decMTDDesp4Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp5">
+          <DataField>decMTDDesp5</DataField>
+        </Field>
+        <Field Name="decMTDDesp5Format">
+          <DataField>decMTDDesp5Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp6">
+          <DataField>decMTDDesp6</DataField>
+        </Field>
+        <Field Name="decMTDDesp6Format">
+          <DataField>decMTDDesp6Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp7">
+          <DataField>decMTDDesp7</DataField>
+        </Field>
+        <Field Name="decMTDDesp7Format">
+          <DataField>decMTDDesp7Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp8">
+          <DataField>decMTDDesp8</DataField>
+        </Field>
+        <Field Name="decMTDDesp8Format">
+          <DataField>decMTDDesp8Format</DataField>
+        </Field>
+        <Field Name="decMTDDesp9">
+          <DataField>decMTDDesp9</DataField>
+        </Field>
+        <Field Name="decMTDDesp9Format">
+          <DataField>decMTDDesp9Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp1">
+          <DataField>decFTDDesp1</DataField>
+        </Field>
+        <Field Name="decFTDDesp1Format">
+          <DataField>decFTDDesp1Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp2">
+          <DataField>decFTDDesp2</DataField>
+        </Field>
+        <Field Name="decFTDDesp2Format">
+          <DataField>decFTDDesp2Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp3">
+          <DataField>decFTDDesp3</DataField>
+        </Field>
+        <Field Name="decFTDDesp3Format">
+          <DataField>decFTDDesp3Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp4">
+          <DataField>decFTDDesp4</DataField>
+        </Field>
+        <Field Name="decFTDDesp4Format">
+          <DataField>decFTDDesp4Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp5">
+          <DataField>decFTDDesp5</DataField>
+        </Field>
+        <Field Name="decFTDDesp5Format">
+          <DataField>decFTDDesp5Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp6">
+          <DataField>decFTDDesp6</DataField>
+        </Field>
+        <Field Name="decFTDDesp6Format">
+          <DataField>decFTDDesp6Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp7">
+          <DataField>decFTDDesp7</DataField>
+        </Field>
+        <Field Name="decFTDDesp7Format">
+          <DataField>decFTDDesp7Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp8">
+          <DataField>decFTDDesp8</DataField>
+        </Field>
+        <Field Name="decFTDDesp8Format">
+          <DataField>decFTDDesp8Format</DataField>
+        </Field>
+        <Field Name="decFTDDesp9">
+          <DataField>decFTDDesp9</DataField>
+        </Field>
+        <Field Name="decFTDDesp9Format">
+          <DataField>decFTDDesp9Format</DataField>
+        </Field>
+        <Field Name="TempAreaCode">
+          <DataField>TempAreaCode</DataField>
+        </Field>
+        <Field Name="TempZone">
+          <DataField>TempZone</DataField>
+        </Field>
+        <Field Name="TempAreaDes">
+          <DataField>TempAreaDes</DataField>
+        </Field>
+        <Field Name="decMTDret1">
+          <DataField>decMTDret1</DataField>
+        </Field>
+        <Field Name="decMTDret1Format">
+          <DataField>decMTDret1Format</DataField>
+        </Field>
+        <Field Name="decMTDret2">
+          <DataField>decMTDret2</DataField>
+        </Field>
+        <Field Name="decMTDret2Format">
+          <DataField>decMTDret2Format</DataField>
+        </Field>
+        <Field Name="decMTDret3">
+          <DataField>decMTDret3</DataField>
+        </Field>
+        <Field Name="decMTDret3Format">
+          <DataField>decMTDret3Format</DataField>
+        </Field>
+        <Field Name="decMTDret4">
+          <DataField>decMTDret4</DataField>
+        </Field>
+        <Field Name="decMTDret4Format">
+          <DataField>decMTDret4Format</DataField>
+        </Field>
+        <Field Name="decMTDret5">
+          <DataField>decMTDret5</DataField>
+        </Field>
+        <Field Name="decMTDret5Format">
+          <DataField>decMTDret5Format</DataField>
+        </Field>
+        <Field Name="decMTDret6">
+          <DataField>decMTDret6</DataField>
+        </Field>
+        <Field Name="decMTDret6Format">
+          <DataField>decMTDret6Format</DataField>
+        </Field>
+        <Field Name="decMTDret7">
+          <DataField>decMTDret7</DataField>
+        </Field>
+        <Field Name="decMTDret7Format">
+          <DataField>decMTDret7Format</DataField>
+        </Field>
+        <Field Name="decMTDret8">
+          <DataField>decMTDret8</DataField>
+        </Field>
+        <Field Name="decMTDret8Format">
+          <DataField>decMTDret8Format</DataField>
+        </Field>
+        <Field Name="decMTDret9">
+          <DataField>decMTDret9</DataField>
+        </Field>
+        <Field Name="decMTDret9Format">
+          <DataField>decMTDret9Format</DataField>
+        </Field>
+        <Field Name="decFTDret1">
+          <DataField>decFTDret1</DataField>
+        </Field>
+        <Field Name="decFTDret1Format">
+          <DataField>decFTDret1Format</DataField>
+        </Field>
+        <Field Name="decFTDret2">
+          <DataField>decFTDret2</DataField>
+        </Field>
+        <Field Name="decFTDret2Format">
+          <DataField>decFTDret2Format</DataField>
+        </Field>
+        <Field Name="decFTDret3">
+          <DataField>decFTDret3</DataField>
+        </Field>
+        <Field Name="decFTDret3Format">
+          <DataField>decFTDret3Format</DataField>
+        </Field>
+        <Field Name="decFTDret4">
+          <DataField>decFTDret4</DataField>
+        </Field>
+        <Field Name="decFTDret4Format">
+          <DataField>decFTDret4Format</DataField>
+        </Field>
+        <Field Name="decFTDret5">
+          <DataField>decFTDret5</DataField>
+        </Field>
+        <Field Name="decFTDret5Format">
+          <DataField>decFTDret5Format</DataField>
+        </Field>
+        <Field Name="decFTDret6">
+          <DataField>decFTDret6</DataField>
+        </Field>
+        <Field Name="decFTDret6Format">
+          <DataField>decFTDret6Format</DataField>
+        </Field>
+        <Field Name="decFTDret7">
+          <DataField>decFTDret7</DataField>
+        </Field>
+        <Field Name="decFTDret7Format">
+          <DataField>decFTDret7Format</DataField>
+        </Field>
+        <Field Name="decFTDret8">
+          <DataField>decFTDret8</DataField>
+        </Field>
+        <Field Name="decFTDret8Format">
+          <DataField>decFTDret8Format</DataField>
+        </Field>
+        <Field Name="decFTDret9">
+          <DataField>decFTDret9</DataField>
+        </Field>
+        <Field Name="decFTDret9Format">
+          <DataField>decFTDret9Format</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt1">
+          <DataField>intMTDCustCnt1</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt2">
+          <DataField>intMTDCustCnt2</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt3">
+          <DataField>intMTDCustCnt3</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt4">
+          <DataField>intMTDCustCnt4</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt5">
+          <DataField>intMTDCustCnt5</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt6">
+          <DataField>intMTDCustCnt6</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt7">
+          <DataField>intMTDCustCnt7</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt8">
+          <DataField>intMTDCustCnt8</DataField>
+        </Field>
+        <Field Name="intMTDCustCnt9">
+          <DataField>intMTDCustCnt9</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt1">
+          <DataField>intYTDCustCnt1</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt2">
+          <DataField>intYTDCustCnt2</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt3">
+          <DataField>intYTDCustCnt3</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt4">
+          <DataField>intYTDCustCnt4</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt5">
+          <DataField>intYTDCustCnt5</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt6">
+          <DataField>intYTDCustCnt6</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt7">
+          <DataField>intYTDCustCnt7</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt8">
+          <DataField>intYTDCustCnt8</DataField>
+        </Field>
+        <Field Name="intYTDCustCnt9">
+          <DataField>intYTDCustCnt9</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt1">
+          <DataField>intLMTDCustCnt1</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt2">
+          <DataField>intLMTDCustCnt2</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt3">
+          <DataField>intLMTDCustCnt3</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt4">
+          <DataField>intLMTDCustCnt4</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt5">
+          <DataField>intLMTDCustCnt5</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt6">
+          <DataField>intLMTDCustCnt6</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt7">
+          <DataField>intLMTDCustCnt7</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt8">
+          <DataField>intLMTDCustCnt8</DataField>
+        </Field>
+        <Field Name="intLMTDCustCnt9">
+          <DataField>intLMTDCustCnt9</DataField>
+        </Field>
+        <Field Name="decLMTDDesp1">
+          <DataField>decLMTDDesp1</DataField>
+        </Field>
+        <Field Name="decLMTDDesp1Format">
+          <DataField>decLMTDDesp1Format</DataField>
+        </Field>
+        <Field Name="decLMTDret1">
+          <DataField>decLMTDret1</DataField>
+        </Field>
+        <Field Name="decLMTDret1Format">
+          <DataField>decLMTDret1Format</DataField>
+        </Field>
+        <Field Name="decLMTDDesp2">
+          <DataField>decLMTDDesp2</DataField>
+        </Field>
+        <Field Name="decLMTDDesp2Format">
+          <DataField>decLMTDDesp2Format</DataField>
+        </Field>
+        <Field Name="decLMTDret2">
+          <DataField>decLMTDret2</DataField>
+        </Field>
+        <Field Name="decLMTDret2Format">
+          <DataField>decLMTDret2Format</DataField>
+        </Field>
+        <Field Name="decLMTDDesp3">
+          <DataField>decLMTDDesp3</DataField>
+        </Field>
+        <Field Name="decLMTDDesp3Format">
+          <DataField>decLMTDDesp3Format</DataField>
+        </Field>
+        <Field Name="decLMTDDesp4">
+          <DataField>decLMTDDesp4</DataField>
+        </Field>
+        <Field Name="decLMTDDesp4Format">
+          <DataField>decLMTDDesp4Format</DataField>
+        </Field>
+        <Field Name="decLMTDDesp5">
+          <DataField>decLMTDDesp5</DataField>
+        </Field>
+        <Field Name="decLMTDDesp5Format">
+          <DataField>decLMTDDesp5Format</DataField>
+        </Field>
+        <Field Name="decLMTDDesp6">
+          <DataField>decLMTDDesp6</DataField>
+        </Field>
+        <Field Name="decLMTDDesp6Format">
+          <DataField>decLMTDDesp6Format</DataField>
+        </Field>
+        <Field Name="decLMTDDesp7">
+          <DataField>decLMTDDesp7</DataField>
+        </Field>
+        <Field Name="decLMTDDesp7Format">
+          <DataField>decLMTDDesp7Format</DataField>
+        </Field>
+        <Field Name="decLMTDDesp8">
+          <DataField>decLMTDDesp8</DataField>
+        </Field>
+        <Field Name="decLMTDDesp8Format">
+          <DataField>decLMTDDesp8Format</DataField>
+        </Field>
+        <Field Name="decLMTDDesp9">
+          <DataField>decLMTDDesp9</DataField>
+        </Field>
+        <Field Name="decLMTDDesp9Format">
+          <DataField>decLMTDDesp9Format</DataField>
+        </Field>
+        <Field Name="decLMTDret3">
+          <DataField>decLMTDret3</DataField>
+        </Field>
+        <Field Name="decLMTDret3Format">
+          <DataField>decLMTDret3Format</DataField>
+        </Field>
+        <Field Name="decLMTDret4">
+          <DataField>decLMTDret4</DataField>
+        </Field>
+        <Field Name="decLMTDret4Format">
+          <DataField>decLMTDret4Format</DataField>
+        </Field>
+        <Field Name="decLMTDret5">
+          <DataField>decLMTDret5</DataField>
+        </Field>
+        <Field Name="decLMTDret5Format">
+          <DataField>decLMTDret5Format</DataField>
+        </Field>
+        <Field Name="decLMTDret6">
+          <DataField>decLMTDret6</DataField>
+        </Field>
+        <Field Name="decLMTDret6Format">
+          <DataField>decLMTDret6Format</DataField>
+        </Field>
+        <Field Name="decLMTDret7">
+          <DataField>decLMTDret7</DataField>
+        </Field>
+        <Field Name="decLMTDret7Format">
+          <DataField>decLMTDret7Format</DataField>
+        </Field>
+        <Field Name="decLMTDret8">
+          <DataField>decLMTDret8</DataField>
+        </Field>
+        <Field Name="decLMTDret8Format">
+          <DataField>decLMTDret8Format</DataField>
+        </Field>
+        <Field Name="decLMTDret9">
+          <DataField>decLMTDret9</DataField>
+        </Field>
+        <Field Name="decLMTDret9Format">
+          <DataField>decLMTDret9Format</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt1">
+          <DataField>intMTDItemCnt1</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt2">
+          <DataField>intMTDItemCnt2</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt3">
+          <DataField>intMTDItemCnt3</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt4">
+          <DataField>intMTDItemCnt4</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt5">
+          <DataField>intMTDItemCnt5</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt6">
+          <DataField>intMTDItemCnt6</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt7">
+          <DataField>intMTDItemCnt7</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt8">
+          <DataField>intMTDItemCnt8</DataField>
+        </Field>
+        <Field Name="intMTDItemCnt9">
+          <DataField>intMTDItemCnt9</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt1">
+          <DataField>intLMTDItemCnt1</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt2">
+          <DataField>intLMTDItemCnt2</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt3">
+          <DataField>intLMTDItemCnt3</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt4">
+          <DataField>intLMTDItemCnt4</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt5">
+          <DataField>intLMTDItemCnt5</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt6">
+          <DataField>intLMTDItemCnt6</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt7">
+          <DataField>intLMTDItemCnt7</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt8">
+          <DataField>intLMTDItemCnt8</DataField>
+        </Field>
+        <Field Name="intLMTDItemCnt9">
+          <DataField>intLMTDItemCnt9</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt1">
+          <DataField>intYTDItemCnt1</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt2">
+          <DataField>intYTDItemCnt2</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt3">
+          <DataField>intYTDItemCnt3</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt4">
+          <DataField>intYTDItemCnt4</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt5">
+          <DataField>intYTDItemCnt5</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt6">
+          <DataField>intYTDItemCnt6</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt7">
+          <DataField>intYTDItemCnt7</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt8">
+          <DataField>intYTDItemCnt8</DataField>
+        </Field>
+        <Field Name="intYTDItemCnt9">
+          <DataField>intYTDItemCnt9</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

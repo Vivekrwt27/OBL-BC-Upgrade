@@ -1,0 +1,751 @@
+page 50288 kbs1
+{
+    PageType = List;
+    Permissions = TableData 112 = rimd;
+    SourceTable = 112;
+
+    layout
+    {
+        area(content)
+        {
+            repeater(Group)
+            {
+                field("Sell-to Customer No."; rec."Sell-to Customer No.")
+                {
+                }
+                field("No."; rec."No.")
+                {
+                }
+                field("Bill-to Customer No."; rec."Bill-to Customer No.")
+                {
+                }
+                field("Bill-to Name"; rec."Bill-to Name")
+                {
+                }
+                field("Bill-to Name 2"; rec."Bill-to Name 2")
+                {
+                }
+                field("Bill-to Address"; rec."Bill-to Address")
+                {
+                }
+                field("Bill-to Address 2"; rec."Bill-to Address 2")
+                {
+                }
+                field("Bill-to City"; rec."Bill-to City")
+                {
+                }
+                field("Bill-to Contact"; rec."Bill-to Contact")
+                {
+                }
+                field("Your Reference"; rec."Your Reference")
+                {
+                }
+                field("Ship-to Code"; rec."Ship-to Code")
+                {
+                }
+                field("Ship-to Name"; rec."Ship-to Name")
+                {
+                }
+                field("Ship-to Name 2"; rec."Ship-to Name 2")
+                {
+                }
+                field("Ship-to Address"; rec."Ship-to Address")
+                {
+                }
+                field("Ship-to Address 2"; rec."Ship-to Address 2")
+                {
+                }
+                field("Ship-to City"; rec."Ship-to City")
+                {
+                }
+                field("Ship-to Contact"; rec."Ship-to Contact")
+                {
+                }
+                field("Order Date"; rec."Order Date")
+                {
+                }
+                field("Posting Date"; rec."Posting Date")
+                {
+                }
+                field("Shipment Date"; rec."Shipment Date")
+                {
+                }
+                field("Posting Description"; rec."Posting Description")
+                {
+                }
+                field("Payment Terms Code"; rec."Payment Terms Code")
+                {
+                }
+                field("Due Date"; rec."Due Date")
+                {
+                }
+                field("Payment Discount %"; rec."Payment Discount %")
+                {
+                }
+                field("Pmt. Discount Date"; rec."Pmt. Discount Date")
+                {
+                }
+                field("Shipment Method Code"; rec."Shipment Method Code")
+                {
+                }
+                field("Location Code"; rec."Location Code")
+                {
+                }
+                field("Shortcut Dimension 1 Code"; rec."Shortcut Dimension 1 Code")
+                {
+                }
+                field("Shortcut Dimension 2 Code"; rec."Shortcut Dimension 2 Code")
+                {
+                }
+                field("Customer Posting Group"; rec."Customer Posting Group")
+                {
+                }
+                field("Currency Code"; rec."Currency Code")
+                {
+                }
+                field("Currency Factor"; rec."Currency Factor")
+                {
+                }
+                field("Customer Price Group"; rec."Customer Price Group")
+                {
+                }
+                field("Prices Including VAT"; rec."Prices Including VAT")
+                {
+                }
+                field("Invoice Disc. Code"; rec."Invoice Disc. Code")
+                {
+                }
+                field("Customer Disc. Group"; rec."Customer Disc. Group")
+                {
+                }
+                field("Language Code"; rec."Language Code")
+                {
+                }
+                field("Salesperson Code"; rec."Salesperson Code")
+                {
+                }
+                field("Order No."; rec."Order No.")
+                {
+                }
+                field(Comment; rec.Comment)
+                {
+                }
+                field("No. Printed"; rec."No. Printed")
+                {
+                }
+                field("On Hold"; rec."On Hold")
+                {
+                }
+                field("Applies-to Doc. Type"; rec."Applies-to Doc. Type")
+                {
+                }
+                field("Applies-to Doc. No."; rec."Applies-to Doc. No.")
+                {
+                }
+                field("Bal. Account No."; rec."Bal. Account No.")
+                {
+                }
+                field(Amount; rec.Amount)
+                {
+                }
+                field("Amount Including VAT"; rec."Amount Including VAT")
+                {
+                }
+                field("VAT Registration No."; rec."VAT Registration No.")
+                {
+                }
+                field("Reason Code"; rec."Reason Code")
+                {
+                }
+                field("Gen. Bus. Posting Group"; rec."Gen. Bus. Posting Group")
+                {
+                }
+                field("EU 3-Party Trade"; rec."EU 3-Party Trade")
+                {
+                }
+                field("Transaction Type"; rec."Transaction Type")
+                {
+                }
+                field("Transport Method"; rec."Transport Method")
+                {
+                }
+                field("VAT Country/Region Code"; rec."VAT Country/Region Code")
+                {
+                }
+                field("Sell-to Customer Name"; rec."Sell-to Customer Name")
+                {
+                }
+                field("Sell-to Customer Name 2"; rec."Sell-to Customer Name 2")
+                {
+                }
+                field("Sell-to Address"; rec."Sell-to Address")
+                {
+                }
+                field("Sell-to Address 2"; rec."Sell-to Address 2")
+                {
+                }
+                field("Sell-to City"; rec."Sell-to City")
+                {
+                }
+                field("Sell-to Contact"; rec."Sell-to Contact")
+                {
+                }
+                field("Bill-to Post Code"; rec."Bill-to Post Code")
+                {
+                }
+                field("Bill-to County"; rec."Bill-to County")
+                {
+                }
+                field("Bill-to Country/Region Code"; rec."Bill-to Country/Region Code")
+                {
+                }
+                field("Sell-to Post Code"; rec."Sell-to Post Code")
+                {
+                }
+                field("Sell-to County"; rec."Sell-to County")
+                {
+                }
+                field("Sell-to Country/Region Code"; rec."Sell-to Country/Region Code")
+                {
+                }
+                field("Ship-to Post Code"; rec."Ship-to Post Code")
+                {
+                }
+                field("Ship-to County"; rec."Ship-to County")
+                {
+                }
+                field("Ship-to Country/Region Code"; rec."Ship-to Country/Region Code")
+                {
+                }
+                field("Bal. Account Type"; rec."Bal. Account Type")
+                {
+                }
+                field("Exit Point"; rec."Exit Point")
+                {
+                }
+                field(Correction; rec.Correction)
+                {
+                }
+                field("Document Date"; rec."Document Date")
+                {
+                }
+                field("External Document No."; rec."External Document No.")
+                {
+                }
+              
+                field("Transaction Specification"; rec."Transaction Specification")
+                {
+                }
+                field("Payment Method Code"; rec."Payment Method Code")
+                {
+                }
+                field("Shipping Agent Code"; rec."Shipping Agent Code")
+                {
+                }
+                field("Package Tracking No."; rec."Package Tracking No.")
+                {
+                }
+                field("Pre-Assigned No. Series"; rec."Pre-Assigned No. Series")
+                {
+                }
+                field("No. Series"; rec."No. Series")
+                {
+                }
+                field("Order No. Series"; rec."Order No. Series")
+                {
+                }
+                field("Pre-Assigned No."; rec."Pre-Assigned No.")
+                {
+                }
+                field("User ID"; rec."User ID")
+                {
+                }
+                field("Source Code"; rec."Source Code")
+                {
+                }
+                field("Tax Area Code"; rec."Tax Area Code")
+                {
+                }
+                field("Tax Liable"; rec."Tax Liable")
+                {
+                }
+                field("VAT Bus. Posting Group"; rec."VAT Bus. Posting Group")
+                {
+                }
+                field("VAT Base Discount %"; rec."VAT Base Discount %")
+                {
+                }
+                field("Prepayment No. Series"; rec."Prepayment No. Series")
+                {
+                }
+                field("Prepayment Invoice"; rec."Prepayment Invoice")
+                {
+                }
+                field("Prepayment Order No."; rec."Prepayment Order No.")
+                {
+                }
+                field("Quote No."; rec."Quote No.")
+                {
+                }
+                field("Dimension Set ID"; rec."Dimension Set ID")
+                {
+                }
+                field("Document Exchange Identifier"; rec."Document Exchange Identifier")
+                {
+                }
+                field("Document Exchange Status"; rec."Document Exchange Status")
+                {
+                }
+                field("Doc. Exch. Original Identifier"; rec."Doc. Exch. Original Identifier")
+                {
+                }
+                field("Coupled to CRM"; rec."Coupled to CRM")
+                {
+                }
+                field("Remaining Amount"; rec."Remaining Amount")
+                {
+                }
+                field("Cust. Ledger Entry No."; rec."Cust. Ledger Entry No.")
+                {
+                }
+                field("Invoice Discount Amount"; rec."Invoice Discount Amount")
+                {
+                }
+                field("Campaign No."; rec."Campaign No.")
+                {
+                }
+                field("Sell-to Contact No."; rec."Sell-to Contact No.")
+                {
+                }
+                field("Bill-to Contact No."; rec."Bill-to Contact No.")
+                {
+                }
+                field("Responsibility Center"; rec."Responsibility Center")
+                {
+                }
+                field("Allow Line Disc."; rec."Allow Line Disc.")
+                {
+                }
+                field("Get Shipment Used"; rec."Get Shipment Used")
+                {
+                }
+                field(State; rec.State)
+                {
+                }
+                field("Time of Removal"; rec."Time of Removal")
+                {
+                }
+                field("LR/RR No."; rec."LR/RR No.")
+                {
+                }
+                field("LR/RR Date"; rec."LR/RR Date")
+                {
+                }
+                field("Vehicle No."; rec."Vehicle No.")
+                {
+                }
+                field("Mode of Transport"; rec."Mode of Transport")
+                {
+                }
+                field("Nature of Supply"; rec."Nature of Supply")
+                {
+                }
+                field("GST Customer Type"; rec."GST Customer Type")
+                {
+                }
+                field("GST Without Payment of Duty"; rec."GST Without Payment of Duty")
+                {
+                }
+                field("Invoice Type"; rec."Invoice Type")
+                {
+                }
+                field("Bill Of Export No."; rec."Bill Of Export No.")
+                {
+                }
+                field("Bill Of Export Date"; rec."Bill Of Export Date")
+                {
+                }
+                field("e-Commerce Customer"; rec."e-Commerce Customer")
+                {
+                }
+                field("GST Bill-to State Code"; rec."GST Bill-to State Code")
+                {
+                }
+                field("GST Ship-to State Code"; rec."GST Ship-to State Code")
+                {
+                }
+                field("Location State Code"; rec."Location State Code")
+                {
+                }
+                field("Customer GST Reg. No."; rec."Customer GST Reg. No.")
+                {
+                }
+                field("Ship-to GST Reg. No."; rec."Ship-to GST Reg. No.")
+                {
+                }
+                field("Distance (Km)"; rec."Distance (Km)")
+                {
+                }
+                field("Vehicle Type"; rec."Vehicle Type")
+                {
+                }
+                field("Reference Invoice No."; rec."Reference Invoice No.")
+                {
+                }
+                field("Supply Finish Date"; rec."Supply Finish Date")
+                {
+                }
+                field("Rate Change Applicable"; rec."Rate Change Applicable")
+                {
+                }
+                field("POS Out Of India"; rec."POS Out Of India")
+                {
+                }
+                field("Acknowledgement No."; rec."Acknowledgement No.")
+                {
+                }
+                field("IRN Hash"; rec."IRN Hash")
+                {
+                }
+                field("QR Code"; rec."QR Code")
+                {
+                }
+                field("Ship-to Customer"; rec."Ship-to Customer")
+                {
+                }
+                field("Ship-to GST Customer Type"; rec."Ship-to GST Customer Type")
+                {
+                }
+                field("Acknowledgement Date"; rec."Acknowledgement Date")
+                {
+                }
+                field("Customer Type"; rec."Customer Type")
+                {
+                }
+                field("Security Amount"; rec."Security Amount")
+                {
+                }
+                field("Security Date"; rec."Security Date")
+                {
+                }
+                field("PO No."; rec."PO No.")
+                {
+                }
+                field(Marked; rec.Marked)
+                {
+                }
+                field("Transporter's Name"; rec."Transporter's Name")
+                {
+                }
+                field("GR No."; rec."GR No.")
+                {
+                }
+                field("Truck No."; rec."Truck No.")
+                {
+                }
+                field("Shipping Bill No."; rec."Shipping Bill No.")
+                {
+                }
+                field("Loading Inspector"; rec."Loading Inspector")
+                {
+                }
+                field("GR Date"; rec."GR Date")
+                {
+                }
+                field("Insurance Amount"; rec."Insurance Amount")
+                {
+                }
+                field("Foreign Commission Agent"; rec."Foreign Commission Agent")
+                {
+                }
+                field("Indian Commission Agent"; rec."Indian Commission Agent")
+                {
+                }
+                field("Entry No."; rec."Entry No.")
+                {
+                }
+                field("Entry Date"; rec."Entry Date")
+                {
+                }
+                field("Main Location"; rec."Main Location")
+                {
+                }
+                field("Shipment Status"; rec."Shipment Status")
+                {
+                }
+                field("State Desc."; rec."State Desc.")
+                {
+                }
+                field("Salesperson Description"; rec."Salesperson Description")
+                {
+                }
+                field("Amount Including Excise"; rec."Amount Including Excise")
+                {
+                }
+                field("Transporter Name"; rec."Transporter Name")
+                {
+                }
+                field("Excise Amount 1"; rec."Excise Amount 1")
+                {
+                }
+                field("Invoice Discount Amount1"; rec."Invoice Discount Amount1")
+                {
+                }
+                field("Ocean Freight"; rec."Ocean Freight")
+                {
+                }
+                field("No. of Containers"; rec."No. of Containers")
+                {
+                }
+                field("Payment Terms"; rec."Payment Terms")
+                {
+                }
+                field("LC Number"; rec."LC Number")
+                {
+                }
+                field("Currency Code 1"; rec."Currency Code 1")
+                {
+                }
+                field("Dealer Code"; rec."Dealer Code")
+                {
+                }
+                field("Dealer's Salesperson Code"; rec."Dealer's Salesperson Code")
+                {
+                }
+                field("Quote Date"; rec."Quote Date")
+                {
+                }
+                field("Releasing Date"; rec."Releasing Date")
+                {
+                }
+                field("Releasing Time"; rec."Releasing Time")
+                {
+                }
+                field("Gross Weight"; rec."Gross Weight")
+                {
+                }
+                field("Net Weight"; rec."Net Weight")
+                {
+                }
+                field("Sq. Meter"; rec."Sq. Meter")
+                {
+                }
+                field("Qty In carton"; rec."Qty In carton")
+                {
+                }
+                field("Sales Tax Amount"; rec."Sales Tax Amount")
+                {
+                }
+                field("Sales Type"; rec."Sales Type")
+                {
+                }
+                field("Group Code"; rec."Group Code")
+                {
+                }
+                field("PCH Mailed"; rec."PCH Mailed")
+                {
+                }
+                field(Pay; rec.Pay)
+                {
+                }
+                field("Blanket Order No."; rec."Blanket Order No.")
+                {
+                }
+                field("Discount Charges %"; rec."Discount Charges %")
+                {
+                }
+                field("Inter Company"; rec."Inter Company")
+                {
+                }
+                field(COCO; rec.COCO)
+                {
+                }
+                field("COCO Store"; rec."COCO Store")
+                {
+                }
+                field("Make Order Date"; rec."Make Order Date")
+                {
+                }
+                field("Order Created ID"; rec."Order Created ID")
+                {
+                }
+                field("RELEASING DATETIME"; rec."RELEASING DATETIME")
+                {
+                }
+                field("Order Date Time"; rec."Order Date Time")
+                {
+                }
+                field("Release DateTime"; rec."Release DateTime")
+                {
+                }
+                field("TPT Method"; rec."TPT Method")
+                {
+                }
+                field("Ship to Phone No."; rec."Ship to Phone No.")
+                {
+                }
+                field("Calculate Discount"; rec."Calculate Discount")
+                {
+                }
+                field("ORC Terms"; rec."ORC Terms")
+                {
+                }
+                field("GR Value"; rec."GR Value")
+                {
+                }
+                field("Govt./Private Sales Person"; rec."Govt./Private Sales Person")
+                {
+                }
+                field("Order Booked Date"; rec."Order Booked Date")
+                {
+                }
+                field("Despatch Remarks"; rec."Despatch Remarks")
+                {
+                }
+                field(Commitment; rec.Commitment)
+                {
+                }
+                field("Payment Date 3"; rec."Payment Date 3")
+                {
+                }
+                field("Trade Discount"; rec."Trade Discount")
+                {
+                }
+                field(BD; rec.BD)
+                {
+                }
+                field(GPS; rec.GPS)
+                {
+                }
+                field(None; rec.None)
+                {
+                }
+                field("Business Development"; rec."Business Development")
+                {
+                }
+                field("Govt. Project Sales"; rec."Govt. Project Sales")
+                {
+                }
+                field("Orient Bell Tiles Boutique"; rec."Orient Bell Tiles Boutique")
+                {
+                }
+                field("Posting Time"; rec."Posting Time")
+                {
+                }
+                field("E-Way Bill No."; rec."E-Way Bill No.")
+                {
+                }
+                field("E-Way Bill Date"; rec."E-Way Bill Date")
+                {
+                }
+                field("E-Way Bill Validity"; rec."E-Way Bill Validity")
+                {
+                }
+                field("E-Way-to generate"; rec."E-Way-to generate")
+                {
+                }
+                field("E-Way Generated"; rec."E-Way Generated")
+                {
+                }
+                field("New Vechile No."; rec."New Vechile No.")
+                {
+                }
+                field("Vechile No. Update Remark"; rec."Vechile No. Update Remark")
+                {
+                }
+                field("E-Way Canceled"; rec."E-Way Canceled")
+                {
+                }
+                field("Transportation Distance"; rec."Transportation Distance")
+                {
+                }
+                field("E-Way URL"; rec."E-Way URL")
+                {
+                }
+                field("Reason of Cancel"; rec."Reason of Cancel")
+                {
+                }
+                field("E-Way Transaction Type"; rec."E-Way Transaction Type")
+                {
+                }
+                field("State name"; rec."State name")
+                {
+                }
+                field("Type Filter"; rec."Type Filter")
+                {
+                }
+                field("Invoiced Mailed"; rec."Invoiced Mailed")
+                {
+                }
+                field("Add Insu Discount"; rec."Add Insu Discount")
+                {
+                }
+                field("Tin No."; rec."Tin No.")
+                {
+                }
+                field("Tax Base"; rec."Tax Base")
+                {
+                }
+                field("Sales Territory"; rec."Sales Territory")
+                {
+                }
+                field("CD Applicable"; rec."CD Applicable")
+                {
+                }
+                field("Secondry Sales Person"; rec."Secondry Sales Person")
+                {
+                }
+                field("CD Availed from Utilisation"; rec."CD Availed from Utilisation")
+                {
+                }
+                field("Contribution Percentage"; rec."Contribution Percentage")
+                {
+                }
+                field(CKA; rec.CKA)
+                {
+                }
+                field("CKA Code"; rec."CKA Code")
+                {
+                }
+                field(Retail; rec.Retail)
+                {
+                }
+                field("Retail Code"; rec."Retail Code")
+                {
+                }
+                field("Ship to Pin"; rec."Ship to Pin")
+                {
+                }
+                field("PMT Code"; rec."PMT Code")
+                {
+                }
+                field("TCS On Collection Entry"; rec."TCS On Collection Entry")
+                {
+                }
+                field("Direct Not Approved"; rec."Direct Not Approved")
+                {
+                }
+                field("InventoryNot Directly Approved"; rec."InventoryNot Directly Approved")
+                {
+                }
+                field("Qty. in Sq. Meter"; rec."Qty. in Sq. Meter")
+                {
+                }
+                field("Last Payment Receipt Date"; rec."Last Payment Receipt Date")
+                {
+                }
+                field("Insurance Amt"; rec."Insurance Amt")
+                {
+                }
+                field("Freight Amt"; rec."Freight Amt")
+                {
+                }
+            }
+        }
+    }
+
+    actions
+    {
+    }
+}
+
